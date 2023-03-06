@@ -25,7 +25,7 @@ const emit = defineEmits<{
 
 <script lang="ts">
 export default {
-  name: "Thought"
+  name: "ThoughtComponent"
 }
 </script>
 

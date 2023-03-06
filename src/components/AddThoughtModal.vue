@@ -62,7 +62,7 @@ const clear = () => {
 
 <script lang="ts">
 export default {
-  name: "Modal",
+  name: "AddThoughtModal",
 }
 
 </script>
