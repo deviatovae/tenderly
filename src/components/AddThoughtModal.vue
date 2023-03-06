@@ -8,14 +8,16 @@ const emit = defineEmits<{
   (e: 'addThought', value: string): void
 }>()
 
-const handleAddThought = () => {
-  if (newThought.value.length > 5) {
-    emit('addThought', newThought.value);
-    newThought.value = ''
-    errorMessage.value = ''
-    showModal.value = false
+const handleAddThought = (): void => {
+  if (newThought.value.length <= 5) {
+    errorMessage.value = 'Try extending your thought to 5 words or more'
+    return
   }
-  return errorMessage.value = 'Try extending your thought to 5 words or more'
+
+  emit('addThought', newThought.value);
+  newThought.value = ''
+  errorMessage.value = ''
+  showModal.value = false
 }
 
 const close = () => {

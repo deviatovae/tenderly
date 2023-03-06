@@ -2,9 +2,7 @@
 <template>
   <v-app class="app">
     <v-toolbar density="compact" :style="{backgroundColor:'#00695C', color: '#E0F2F1'}">
-      <v-toolbar-title>
-        <span>TENDERLY</span>
-      </v-toolbar-title>
+      <v-toolbar-title class="logo">Tenderly</v-toolbar-title>
       <v-toolbar-items>
         <v-btn flat>
           <router-link class="link" to="/">Thoughts</router-link>
@@ -26,6 +24,11 @@
 .link {
   text-decoration: none;
   color: inherit;
+}
+
+.logo {
+  font-family: 'Allison', cursive;
+  font-size: 2rem;
 }
 
 .app {

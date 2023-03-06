@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import App from '@/App.vue';
 import Lounge from '@/views/LoungeView.vue';
 import AboutView from '@/views/AboutView.vue';
 import ThoughtsView from '@/views/ThoughtsView.vue';
